@@ -15,6 +15,8 @@ To run this project, ensure you have the following installed:
 * `cpp.py`
 * `Chessknight.py`
 
+* run `python -m pip install osmnx networkx numpy scipy flask shapely`
+
 ### Dependencies
 No external libraries or third-party packages are required as it only uses Python's built-in standard libraries.
 
@@ -22,34 +24,31 @@ No external libraries or third-party packages are required as it only uses Pytho
 
 ## Travelling Salesman Problem
 
-### How to run
+### HOW TO RUN
 
-### Sample Test Case
+### SAMPLE TEST CASE
 ---
 
 ## Chinese Postman Problem
 
-### How to run
-### Sample Test Case
+### HOW TO RUN
+### SAMPLE TEST CASE
 ---
 
 ## Knight's Tour
 
-### How to run
+### HOW TO RUN
 
-### Input format
-
-Line 1: width and height of chessboard, separated by space e.g. 5 5
-
-Line 2: starting column and row coordinates of knight, separated by space e.g. 2 2
+- Open chessknightt.py
+- Run `python chessknightt.py --visual` in terminal to open visualisation site
 
 ### Expected Output
 
 If a path is found, the program prints `path found` followed by the exact ordered sequence of coordinates visited from start to finish.
 
-If the knight gets trapped or a full tour is impossible, the program prints `path not found` followed by a list of all unreached coordinates remaining on the board.
+If the knight gets trapped or a full tour is impossible, the program prints `path not found`.
 
-### Sample Test Case
+### SAMPLE TEST CASE
 
 ### Valid testcase
 
@@ -61,43 +60,8 @@ Input:
 
 Output:
 
-path found
-0,0
-2,1
-4,2
-5,4
-3,5
-1,4
-0,2
-2,3
-4,4
-2,5
-0,4
-1,2
-2,4
-0,5
-1,3
-0,1
-2,0
-4,1
-5,3
-4,5
-3,3
-5,2
-4,0
-3,2
-1,1
-0,3
-1,5
-3,4
-5,5
-4,3
-5,1
-3,0
-2,2
-1,0
-3,1
-5,0
+<img width="1296" height="901" alt="image" src="https://github.com/user-attachments/assets/b7d22587-9b47-4ffa-b800-8504b990db0f" />
+
 
 ### Invalid testcase
 
@@ -108,3 +72,7 @@ Input:
 0 0
 
 Output:
+
+<img width="1276" height="900" alt="image" src="https://github.com/user-attachments/assets/9153a0c8-17b0-4e08-b908-ca5c59fedafc" />
+
+
