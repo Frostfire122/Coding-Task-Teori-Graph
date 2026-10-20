@@ -42,6 +42,11 @@ No external libraries or third-party packages are required as it only uses Pytho
 - Open chessknightt.py
 - Run `python chessknightt.py --visual` in terminal to open visualisation site
 
+### Input Format
+
+- Insert width and height of chessboard
+- Insert starting coordinates (x, y) or knight
+
 ### Expected Output
 
 If a path is found, the program prints `path found` followed by the exact ordered sequence of coordinates visited from start to finish.
