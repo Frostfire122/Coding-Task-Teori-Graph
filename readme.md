@@ -30,6 +30,7 @@ No external libraries or third-party packages are required as it only uses Pytho
   
 ### SAMPLE TEST CASE
 `Input` 
+
 <img width="457" height="201" alt="image" src="https://github.com/user-attachments/assets/2f64fe0f-6808-4a76-9318-7747e9472e9e" />
 
 `Output`
