@@ -1,7 +1,7 @@
 """
 Task 3 - Knight's Tour on a dynamic chessboard   (console version)
 
-Run:   python Chesskngiht.py
+Run:   python Chessknight.py
 
 Input  (stdin):   line 1: "w h"   -> number of columns and rows of the board
                   line 2: "x y"   -> starting square of the knight (0-indexed,
@@ -118,7 +118,15 @@ def run_console():
     except ValueError:
         print("path not found")
         return
-    tour = knight_tour(w, h, sx, sy)
+    # Parity rule: on an odd-sized board a tour must start on an even square.
+    # Checking it first answers instantly instead of searching until timeout.
+    if (w * h) % 2 == 1 and (sx + sy) % 2 == 1:
+        print("path not found")
+        return
+    try:
+        tour = knight_tour(w, h, sx, sy)
+    except TimeoutError:
+        tour = []
     if not tour or len(tour) != w * h:
         print("path not found")
     else:
@@ -388,6 +396,12 @@ class Handler(BaseHTTPRequestHandler):
                 return
             if not (0 <= x < w and 0 <= y < h):
                 self._send(400, json.dumps({"error": "The start square must be inside the board."}), "application/json")
+                return
+            if (w * h) % 2 == 1 and (x + y) % 2 == 1:
+                # Parity rule: impossible, so answer instantly instead of searching.
+                self._send(200, json.dumps({"found": False, "path": [[x, y]],
+                                            "reason": why_no_tour(w, h, x, y), "ms": 0.0}),
+                           "application/json")
                 return
             t0 = time.perf_counter()
             try:
