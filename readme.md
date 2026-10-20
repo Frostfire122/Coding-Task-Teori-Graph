@@ -25,8 +25,16 @@ No external libraries or third-party packages are required as it only uses Pytho
 ## Travelling Salesman Problem
 
 ### HOW TO RUN
-
+* run `python -m pip install osmnx networkx numpy scipy flask shapely`
+* Run the code on VSCODE terminal
+  
 ### SAMPLE TEST CASE
+Input 
+<img width="457" height="201" alt="image" src="https://github.com/user-attachments/assets/2f64fe0f-6808-4a76-9318-7747e9472e9e" />
+
+Output 
+<img width="1917" height="963" alt="image" src="https://github.com/user-attachments/assets/1317c86b-81cc-45c6-a2cd-1e1c6cf22d0f" />
+
 ---
 
 ## Chinese Postman Problem
