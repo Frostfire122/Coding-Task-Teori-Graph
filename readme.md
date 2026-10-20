@@ -25,6 +25,7 @@ No external libraries or third-party packages are required as it only uses Pytho
 ## Travelling Salesman Problem
 
 ### HOW TO RUN
+* Open tsp.py
 * run `python -m pip install osmnx networkx numpy scipy flask shapely`
 * Run the code on VSCODE terminal
   
@@ -41,7 +42,19 @@ No external libraries or third-party packages are required as it only uses Pytho
 ## Chinese Postman Problem
 
 ### HOW TO RUN
+
+- Open cpp.py
+- Run `python cpp.py` in terminal to open visualisation site
+- Click anywhere on the map to set the truck base.
+- Set the radius.
+- Press Solve.
+  
 ### SAMPLE TEST CASE
+
+Input & Ouput :
+
+<img width="1917" height="1082" alt="image" src="https://github.com/user-attachments/assets/fd7b48d4-c237-44ab-a97c-2a29813fd679" />
+
 ---
 
 ## Knight's Tour
